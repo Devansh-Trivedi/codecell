@@ -5,15 +5,15 @@
 /.pnp
 .pnp.js
 
-# testing
-/coverage
+# # testing
+# /coverage
 
 
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# # misc
+# .DS_Store
+# .env.local
+# .env.development.local
+# .env.test.local
+# .env.production.local
 
 
