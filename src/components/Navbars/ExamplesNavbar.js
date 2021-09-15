@@ -1,24 +1,12 @@
-/*!
-
-=========================================================
-* BLK Design System React - v1.2.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-import React from "react";
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-// reactstrap components
+import { Route, IndexRoute } from "react-router";
+import LandingPage from "views/examples/LandingPage";
+import Events from "views/examples/Events";
+import logo from "../../assets/img/Logo/log2.png"
 import {
+  Card,
+  CardImg,
   Button,
   Collapse,
   NavbarBrand,
@@ -30,6 +18,7 @@ import {
   Row,
   Col,
   UncontrolledTooltip,
+  Dropdown, DropdownToggle, DropdownMenu, DropdownItem
 } from "reactstrap";
 
 export default function ExamplesNavbar() {
@@ -65,16 +54,32 @@ export default function ExamplesNavbar() {
   const onCollapseExited = () => {
     setCollapseOut("");
   };
+
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggle = () => setDropdownOpen(prevState => !prevState);
+
+
   return (
     <Navbar className={"fixed-top " + color} color-on-scroll="100" expand="lg">
       <Container>
+     
         <div className="navbar-translate">
+          
           <NavbarBrand to="/" id="navbar-brand" tag={Link}>
-            <span>RGIT• </span>
-            Codecell
+            {/* <Col md="1">
+                <Card style={{height:40, width:40}} >
+                    <CardImg style={{height:40, width:40}} top width="100%" src={logo} />
+                </Card>
+                
+              </Col> */}
+            <Col md="1">            
+              <span>RGIT• </span>
+              Codecell
+            </Col>
           </NavbarBrand>
           <UncontrolledTooltip placement="bottom" target="navbar-brand">
-            Designed and Coded by Creative Tim
+            Designed and Coded by RGIT-Codecell
           </UncontrolledTooltip>
           <button
             aria-expanded={collapseOpen}
@@ -95,9 +100,15 @@ export default function ExamplesNavbar() {
         >
           <div className="navbar-collapse-header">
             <Row>
-              <Col className="collapse-brand" xs="6">
+              <Col md="3">
+                <Card style={{height:70, width:70}} >
+                    <CardImg style={{height:70, width:70}} top width="100%" src={logo} />
+                </Card>
+                
+              </Col>
+              <Col className="collapse-brand" xs="3">
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                  BLK•React
+                  RGIT•Codecell
                 </a>
               </Col>
               <Col className="collapse-close text-right" xs="6">
@@ -158,33 +169,54 @@ export default function ExamplesNavbar() {
                 <i className="tim-icons icon-spaceship" /> JOIN
               </Button>
             </NavItem>
+
             <NavItem>
               <NavLink tag={Link} to="/">
                 Home
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="/">
+              <NavLink tag={Link} to="/Events">
                 Events
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="/">
+              <NavLink tag={Link} to="/Gallery">
                 Gallery
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="/">
-                Teams
+              <NavLink tag={Link} to="/Internship">
+                Internships
               </NavLink>
             </NavItem>
-            
-            
             {/* <NavItem>
-              <NavLink href="https://github.com/creativetimofficial/blk-design-system-react/issues">
-                Have an issue?
+              <NavLink tag={Link} to="/Gallery">
+                Teams
               </NavLink>
             </NavItem> */}
+            <Dropdown isOpen={dropdownOpen} toggle={toggle}>
+              <DropdownToggle caret>
+                Teams
+              </DropdownToggle>
+              <DropdownMenu>
+                <DropdownItem header>
+                  
+                    <NavLink tag={Link} to="/Team21_22" style={{color:'grey',fontWeight:'bold'}}>
+                      2021-2022
+                    </NavLink>
+                  
+                </DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem header>
+                  <NavLink tag={Link} to="/Team20_21" style={{color:'grey',fontWeight:'bold'}}>
+                    2020-2021
+                  </NavLink>
+                </DropdownItem>
+                {/* <DropdownItem divider /> */}
+              </DropdownMenu>
+            </Dropdown>
+
           </Nav>
         </Collapse>
       </Container>

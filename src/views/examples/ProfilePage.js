@@ -49,17 +49,17 @@ import Footer from "components/Footer/Footer.js";
 
 const carouselItems = [
   {
-    // src: require("assets/img/denys.jpg").default,
+    src: require("assets/img/denys.jpg").default,
     altText: "Slide 1",
     caption: "Big City Life, United States",
   },
   {
-    // src: require("assets/img/fabien-bazanegue.jpg").default,
+    src: require("assets/img/fabien-bazanegue.jpg").default,
     altText: "Slide 2",
     caption: "Somewhere Beyond, United States",
   },
   {
-    // src: require("assets/img/mark-finn.jpg").default,
+    src: require("assets/img/mark-finn.jpg").default,
     altText: "Slide 3",
     caption: "Stocks, United States",
   },
@@ -157,11 +157,11 @@ export default function ProfilePage() {
               <Col className="ml-auto mr-auto" lg="4" md="6">
                 <Card className="card-coin card-plain">
                   <CardHeader>
-                    <img
+                    {/* <img
                       alt="..."
                       className="img-center img-fluid rounded-circle"
                       // src={require("assets/img/mike.jpg").default}
-                    />
+                    /> */}
                     <h4 className="title">Transactions</h4>
                   </CardHeader>
                   <CardBody>

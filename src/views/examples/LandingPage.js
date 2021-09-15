@@ -7,6 +7,7 @@ import {
   Button,
   Card,
   CardHeader,
+  CardImg,
   CardBody,
   CardFooter,
   CardTitle,
@@ -135,16 +136,15 @@ export default function LandingPage() {
                 The Platform Where We Collaborate To Bring Out The Best Coders In Us
                 </p>
                 <div className="btn-wrapper mb-3">
-                  <p className="category text-success d-inline">
-                    Let's Code
-                  </p>
                   <Button
                     className="btn-link"
                     color="success"
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
+                    href="#about"
                     size="sm"
                   >
+                  <p className="category text-success d-inline">
+                    Let's Explore
+                  </p>
                     <i className="tim-icons icon-minimal-right" />
                   </Button>
                 </div>
@@ -288,7 +288,7 @@ export default function LandingPage() {
                 </Col> */}
                 <Col md="6">
                   <div className="pl-md-5">
-                    <h1>
+                    <h1 id="about">
                      About <br />
                      Us
                     </h1>
@@ -343,49 +343,33 @@ export default function LandingPage() {
             <Row className="justify-content-center">
               <Col lg="12">
                 <h1 className="text-center"> Upcoming Event</h1>
-                <Row className="row-grid justify-content-center">
-                  <Col lg="3">
-                    <div className="info">
-                      <div className="icon icon-primary">
-                        <i className="tim-icons icon-money-coins" />
+                <Row className="row-grid justify-content-between">
+                    <Col md="6">
+                      <div className="pl-md-5">
+                        <h1>
+                          Recursion 3.0
+                        </h1>
+                        <p>
+                        Recursion 3.0 is a hackathon being held by RGIT CESS and RGIT Codecell. It’s a 24 hour Hackathon, where all the teams will ideate to find suitable solutions for the problem statements they will be presented with. It is a sequel to Recursion 2020, which marked the first ever hackathon to be held in Rajiv Gandhi Institute of Technology. The domains will be Machine learning, App development, Blockchain and Web development. The hackathon will serve as a fun challenge to all programmers who participate in it.
+                        </p>
+                      
+                        <br />
+                        <a
+                          className="font-weight-bold text-info mt-5"
+                          href="/Events"
+                          // onClick={(e) => e.preventDefault()}
+                        >
+                          Show all{" "}
+                          <i className="tim-icons icon-minimal-right text-info" />
+                        </a>
                       </div>
-                      <h4 className="info-title">Low Commission</h4>
-                      <hr className="line-primary" />
-                      <p>
-                        Divide details about your work into parts. Write a few
-                        lines about each one. A paragraph describing a feature
-                        will.
-                      </p>
-                    </div>
-                  </Col>
-                  <Col lg="3">
-                    <div className="info">
-                      <div className="icon icon-warning">
-                        <i className="tim-icons icon-chart-pie-36" />
-                      </div>
-                      <h4 className="info-title">High Incomes</h4>
-                      <hr className="line-warning" />
-                      <p>
-                        Divide details about your product or agency work into
-                        parts. Write a few lines about each one. A paragraph
-                        describing feature will be a feature.
-                      </p>
-                    </div>
-                  </Col>
-                  <Col lg="3">
-                    <div className="info">
-                      <div className="icon icon-success">
-                        <i className="tim-icons icon-single-02" />
-                      </div>
-                      <h4 className="info-title">Verified People</h4>
-                      <hr className="line-success" />
-                      <p>
-                        Divide details about your product or agency work into
-                        parts. Write a few lines about each one. A paragraph
-                        describing be enough.
-                      </p>
-                    </div>
-                  </Col>
+                    </Col>
+                    
+                    <Col lg="6" md="6">
+                      <Card>
+                        <CardImg top width="10%" src="https://www.rgitcodecell.in/assets/img/sponsersLogo/recursion_poster.jpeg"/>
+                      </Card>
+                    </Col>
                 </Row>
               </Col>
             </Row>
@@ -399,17 +383,15 @@ export default function LandingPage() {
           />
           <Container>
             <Row className="row-grid justify-content-between">
-              <Col md="5">
+              <Col md="6">
                 <div ref={coding}></div>
               </Col>
               <Col md="6">
                 <div className="px-md-5">
                   <hr className="line-success" />
-                  <h3>Awesome features</h3>
+                  <h3>What's there inside for you ?</h3>
                   <p>
-                    The design system comes with three pre-built pages to help
-                    you get started faster. You can change the text and images
-                    and you're good to go.
+                  The Platform Where We Collaborate To Bring Out The Best Coders In Us
                   </p>
                   <ul className="list-unstyled mt-5">
                     <li className="py-2">
@@ -418,7 +400,7 @@ export default function LandingPage() {
                           <i className="tim-icons icon-vector" />
                         </div>
                         <div className="ml-3">
-                          <h6>Carefully crafted components</h6>
+                          <h6>Networking and Seminars/Webinars</h6>
                         </div>
                       </div>
                     </li>
@@ -428,7 +410,7 @@ export default function LandingPage() {
                           <i className="tim-icons icon-tap-02" />
                         </div>
                         <div className="ml-3">
-                          <h6>Amazing page examples</h6>
+                          <h6>Hackathons</h6>
                         </div>
                       </div>
                     </li>
@@ -438,7 +420,7 @@ export default function LandingPage() {
                           <i className="tim-icons icon-single-02" />
                         </div>
                         <div className="ml-3">
-                          <h6>Super friendly support team</h6>
+                          <h6>Reach and Teach</h6>
                         </div>
                       </div>
                     </li>
@@ -492,7 +474,7 @@ export default function LandingPage() {
               <Col md="4">
                 <hr className="line-info" />
                 <h1>
-                  What us{" "}
+                  Wanna{" "}
                  <span className="text-info">JOIN US ?</span>
                 </h1>
               </Col>

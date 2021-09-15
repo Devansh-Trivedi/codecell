@@ -1,6 +1,8 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
+import MctLogo from "../../assets/img/Logo/mctlogo.jpg"
+import logo from "../../assets/img/Logo/log2.png"
 // reactstrap components
 import {
   Button,
@@ -11,6 +13,8 @@ import {
   Row,
   Col,
   UncontrolledTooltip,
+  Card,
+  CardImg
 } from "reactstrap";
 
 export default function Footer() {
@@ -18,10 +22,18 @@ export default function Footer() {
     <footer className="footer">
       <Container>
         <Row>
-          <Col md="3">
-            <h1 className="title">BLK•</h1>
+          <Col md="1">
+           
+              <Card style={{height:80, width:80}} >
+                <CardImg style={{height:80, width:80}} top width="100%" src={logo} />
+              </Card>
+            
+              
           </Col>
           <Col md="3">
+            <h1 className="title">RGIT• Codecell</h1>
+          </Col>
+          <Col md="2">
             <Nav>
               <NavItem>
                 <NavLink to="/" tag={Link}>
@@ -29,10 +41,24 @@ export default function Footer() {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/landing-page" tag={Link}>
-                  Landing
+                <NavLink to="/Events" tag={Link}>
+                  Events
                 </NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink to="/Gallery" tag={Link}>
+                  Gallery
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink to="/Internship" tag={Link}>
+                  Internship
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </Col>
+          <Col md="3">
+            <Nav>
               <NavItem>
                 <NavLink to="/register-page" tag={Link}>
                   Register
@@ -43,30 +69,16 @@ export default function Footer() {
                   Profile
                 </NavLink>
               </NavItem>
-            </Nav>
-          </Col>
-          <Col md="3">
-            <Nav>
-              <NavItem>
-                <NavLink href="https://creative-tim.com/contact-us?ref=blkdsr-footer">
-                  Contact Us
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://creative-tim.com/about-us?ref=blkdsr-footer">
-                  About Us
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://creative-tim.com/blog?ref=blkdsr-footer">
+              {/* <NavItem>
+                <NavLink href="https://creative-tim.com/blog?ref=blkdsr-footer" tag={Link}>
                   Blog
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://opensource.org/licenses/MIT">
-                  License
+                <NavLink href="https://opensource.org/licenses/MIT" tag={Link}>
+                  In
                 </NavLink>
-              </NavItem>
+              </NavItem> */}
             </Nav>
           </Col>
           <Col md="3">
@@ -110,6 +122,13 @@ export default function Footer() {
               </UncontrolledTooltip>
             </div>
           </Col>
+        </Row>
+        <Row>
+          <Col lg="6" md="6">
+            <Card>
+              <CardImg top width="100%" src={MctLogo} />
+           </Card>
+          </Col>        
         </Row>
       </Container>
     </footer>
