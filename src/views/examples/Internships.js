@@ -42,10 +42,10 @@ export default function Internships() {
       <Row className="row-grid justify-content-between" key={item.id}>
                     <Col md="6">
                       <div className="pl-md-5">
-                        <h1>
+                        <h1 style={{fontSize:"35px"}}>
                           {item.Position}
                         </h1>
-                        <p>
+                        <p style={{fontSize:"15px", textAlign: 'justify', textJustify: 'inter-word'}}>
                           {item.Description}
                         </p>
                       
@@ -54,6 +54,7 @@ export default function Internships() {
                           className="font-weight-bold text-info mt-5"
                           href={item.Apply}
                           target="_blank"
+                          style={{fontSize:"18px"}}
                         //   onClick={(e) => e.preventDefault()}
                         >
                          Apply{" "}
@@ -81,6 +82,7 @@ export default function Internships() {
 
         
       </Container>
+      <Footer/>
     </>
   );
 }

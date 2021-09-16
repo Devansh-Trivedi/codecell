@@ -100,18 +100,18 @@ export default function ExamplesNavbar() {
         >
           <div className="navbar-collapse-header">
             <Row>
-              <Col md="3">
+              <Col xs="3">
                 <Card style={{height:70, width:70}} >
-                    <CardImg style={{height:70, width:70}} top width="100%" src={logo} />
+                    <CardImg style={{height:70, width:70}} top width="50%" src={logo} />
                 </Card>
                 
               </Col>
-              <Col className="collapse-brand" xs="3">
+              {/* <Col className="collapse-brand" xs="3">
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
                   RGIT•Codecell
                 </a>
-              </Col>
-              <Col className="collapse-close text-right" xs="6">
+              </Col> */}
+              <Col className="collapse-close text-right" xs="9">
                 <button
                   aria-expanded={collapseOpen}
                   className="navbar-toggler"
@@ -126,31 +126,19 @@ export default function ExamplesNavbar() {
             <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
-                href="https://twitter.com/CreativeTim"
+                href="https://www.linkedin.com/company/rgit-codecell/"
                 rel="noopener noreferrer"
                 target="_blank"
-                title="Follow us on Twitter"
+                title="Follow us on LinkedIn"
               >
-                <i className="fab fa-twitter" />
-                <p className="d-lg-none d-xl-none">Twitter</p>
+                <i className="fab fa-linkedin" />
+                <p className="d-lg-none d-xl-none">LinkedIn</p>
               </NavLink>
             </NavItem>
             <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
-                href="https://www.facebook.com/CreativeTim"
-                rel="noopener noreferrer"
-                target="_blank"
-                title="Like us on Facebook"
-              >
-                <i className="fab fa-facebook-square" />
-                <p className="d-lg-none d-xl-none">Facebook</p>
-              </NavLink>
-            </NavItem>
-            <NavItem className="p-0">
-              <NavLink
-                data-placement="bottom"
-                href="https://www.instagram.com/CreativeTimOfficial"
+                href="https://www.instagram.com/rgitcodecell"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Follow us on Instagram"
@@ -159,6 +147,7 @@ export default function ExamplesNavbar() {
                 <p className="d-lg-none d-xl-none">Instagram</p>
               </NavLink>
             </NavItem>
+            
             <NavItem>
               <Button
                 className="nav-link d-none d-lg-block"
@@ -213,7 +202,6 @@ export default function ExamplesNavbar() {
                     2020-2021
                   </NavLink>
                 </DropdownItem>
-                {/* <DropdownItem divider /> */}
               </DropdownMenu>
             </Dropdown>
 

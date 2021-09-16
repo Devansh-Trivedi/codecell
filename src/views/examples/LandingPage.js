@@ -128,11 +128,11 @@ export default function LandingPage() {
             <Row className="row-grid justify-content-between align-items-center text-left">
               <Col lg="6" md="6">
 
-                <h1 className="text-white">
-                  RGIT Codecell <br />
+                <h1 className="text-white" style={{fontSize:"35px"}}>
+                  RGIT Codecell <br /><br/>
                   {/* <span className="text-white">Moving ahead</span> */}
                 </h1>
-                <p className="text-white mb-3">
+                <p className="text-white mb-3"  style={{fontSize:"20px"}}>
                 The Platform Where We Collaborate To Bring Out The Best Coders In Us
                 </p>
                 <div className="btn-wrapper mb-3">
@@ -153,26 +153,19 @@ export default function LandingPage() {
                     <Button
                       className="btn-icon btn-simple btn-round btn-neutral"
                       color="default"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://www.linkedin.com/company/rgit-codecell/"
+                      target="_blank"
                     >
-                      <i className="fab fa-twitter" />
+                      <i className="fab fa-linkedin" />
                     </Button>
+  
                     <Button
                       className="btn-icon btn-simple btn-round btn-neutral"
                       color="default"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://www.instagram.com/rgitcodecell"
+                      target="_blank"
                     >
-                      <i className="fab fa-dribbble" />
-                    </Button>
-                    <Button
-                      className="btn-icon btn-simple btn-round btn-neutral"
-                      color="default"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fab fa-facebook" />
+                      <i className="fab fa-instagram" />
                     </Button>
                   </div>
                 </div>
@@ -200,105 +193,22 @@ export default function LandingPage() {
             />
             <Container>
               <Row className="row-grid justify-content-between">
-                {/* <Col className="mt-lg-5" md="5">
-                  <Row>
-                    <Col className="px-2 py-2" lg="6" sm="12">
-                      <Card className="card-stats">
-                        <CardBody>
-                          <Row>
-                            <Col md="4" xs="5">
-                              <div className="icon-big text-center icon-warning">
-                                <i className="tim-icons icon-trophy text-warning" />
-                              </div>
-                            </Col>
-                            <Col md="8" xs="7">
-                              <div className="numbers">
-                                <CardTitle tag="p">3,237</CardTitle>
-                                <p />
-                                <p className="card-category">Awards</p>
-                              </div>
-                            </Col>
-                          </Row>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                    <Col className="px-2 py-2" lg="6" sm="12">
-                      <Card className="card-stats upper bg-default">
-                        <CardBody>
-                          <Row>
-                            <Col md="4" xs="5">
-                              <div className="icon-big text-center icon-warning">
-                                <i className="tim-icons icon-coins text-white" />
-                              </div>
-                            </Col>
-                            <Col md="8" xs="7">
-                              <div className="numbers">
-                                <CardTitle tag="p">3,653</CardTitle>
-                                <p />
-                                <p className="card-category">Commits</p>
-                              </div>
-                            </Col>
-                          </Row>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col className="px-2 py-2" lg="6" sm="12">
-                      <Card className="card-stats">
-                        <CardBody>
-                          <Row>
-                            <Col md="4" xs="5">
-                              <div className="icon-big text-center icon-warning">
-                                <i className="tim-icons icon-gift-2 text-info" />
-                              </div>
-                            </Col>
-                            <Col md="8" xs="7">
-                              <div className="numbers">
-                                <CardTitle tag="p">593</CardTitle>
-                                <p />
-                                <p className="card-category">Presents</p>
-                              </div>
-                            </Col>
-                          </Row>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                    <Col className="px-2 py-2" lg="6" sm="12">
-                      <Card className="card-stats">
-                        <CardBody>
-                          <Row>
-                            <Col md="4" xs="5">
-                              <div className="icon-big text-center icon-warning">
-                                <i className="tim-icons icon-credit-card text-success" />
-                              </div>
-                            </Col>
-                            <Col md="8" xs="7">
-                              <div className="numbers">
-                                <CardTitle tag="p">10,783</CardTitle>
-                                <p />
-                                <p className="card-category">Forks</p>
-                              </div>
-                            </Col>
-                          </Row>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                  </Row>
-                </Col> */}
+               
                 <Col md="6">
                   <div className="pl-md-5">
-                    <h1 id="about">
-                     About <br />
+                    <h1 id="about" style={{fontSize:"35px"}}>
+                     About
                      Us
                     </h1>
-                    <p>
+                    <hr className="line-info" />
+                    <br/>
+                    <p style={{fontSize:"15px", textAlign: 'justify', textJustify: 'inter-word'}}>
                     Codecell was established in 2019 by a group of budding programmers who envisioned a platform where everyone could join together 
                     with like minded people and grow. Despite being a committee that is fairly new compared to many others, we have established a 
                     community of over 150 students and conducted our college's first Hackathon in our first year.
                     </p>
                     <br />
-                    <p>
+                    <p style={{fontSize:"15px", textAlign: 'justify', textJustify: 'inter-word'}}>
                     Codecell helps you in introducing yourself to the world of programming and assists you as you code. You get to interact with other 
                     coders to grow your knowledge base and participate in coding challenges. During your growth as a programmer, we and your peers will 
                     help out in any manner possible by providing knowledge about topics that are requested.
@@ -342,14 +252,17 @@ export default function LandingPage() {
           <Container>
             <Row className="justify-content-center">
               <Col lg="12">
-                <h1 className="text-center"> Upcoming Event</h1>
+                <h1 className="text" style={{fontSize:"35px"}}> Upcoming Event</h1>
+                <hr className="line-info" />
+                <br/><br/>
                 <Row className="row-grid justify-content-between">
                     <Col md="6">
                       <div className="pl-md-5">
-                        <h1>
+                        <h1 style={{fontSize:"30px"}}>
                           Recursion 3.0
                         </h1>
-                        <p>
+                        <br/>
+                        <p style={{fontSize:"15px", textAlign: 'justify', textJustify: 'inter-word'}}>
                         Recursion 3.0 is a hackathon being held by RGIT CESS and RGIT Codecell. It’s a 24 hour Hackathon, where all the teams will ideate to find suitable solutions for the problem statements they will be presented with. It is a sequel to Recursion 2020, which marked the first ever hackathon to be held in Rajiv Gandhi Institute of Technology. The domains will be Machine learning, App development, Blockchain and Web development. The hackathon will serve as a fun challenge to all programmers who participate in it.
                         </p>
                       
@@ -389,18 +302,18 @@ export default function LandingPage() {
               <Col md="6">
                 <div className="px-md-5">
                   <hr className="line-success" />
-                  <h3>What's there inside for you ?</h3>
-                  <p>
+                  <h3 style={{fontSize:"35px"}}>What's there inside for you ?</h3>
+                  <p style={{fontSize:"15px", textAlign: 'justify', textJustify: 'inter-word'}}>
                   The Platform Where We Collaborate To Bring Out The Best Coders In Us
                   </p>
-                  <ul className="list-unstyled mt-5">
+                  <ul className="list-unstyled mt-5" >
                     <li className="py-2">
                       <div className="d-flex align-items-center">
                         <div className="icon icon-success mb-2">
                           <i className="tim-icons icon-vector" />
                         </div>
                         <div className="ml-3">
-                          <h6>Networking and Seminars/Webinars</h6>
+                          <h6 style={{fontSize:"15px", textAlign: 'justify', textJustify: 'inter-word'}}>Networking and Seminars/Webinars</h6>
                         </div>
                       </div>
                     </li>
@@ -410,7 +323,7 @@ export default function LandingPage() {
                           <i className="tim-icons icon-tap-02" />
                         </div>
                         <div className="ml-3">
-                          <h6>Hackathons</h6>
+                          <h6 style={{fontSize:"15px", textAlign: 'justify', textJustify: 'inter-word'}}>Hackathons</h6>
                         </div>
                       </div>
                     </li>
@@ -420,7 +333,7 @@ export default function LandingPage() {
                           <i className="tim-icons icon-single-02" />
                         </div>
                         <div className="ml-3">
-                          <h6>Reach and Teach</h6>
+                          <h6 style={{fontSize:"15px", textAlign: 'justify', textJustify: 'inter-word'}}>Reach and Teach</h6>
                         </div>
                       </div>
                     </li>
@@ -446,9 +359,10 @@ export default function LandingPage() {
               <CardHeader>
                 <Row>
                   <Col className="text-left" sm="6">
+                    {/* <hr className="line-info" /> */}
+                    <h5 className="card-category" style={{fontSize:"15px"}}>Total Events</h5>
+                    <CardTitle tag="h2" style={{fontSize:"35px"}}>Events Organized</CardTitle>
                     <hr className="line-info" />
-                    <h5 className="card-category">Total Events</h5>
-                    <CardTitle tag="h2">Events Organized</CardTitle>
                   </Col>
                 </Row>
               </CardHeader>
@@ -472,10 +386,11 @@ export default function LandingPage() {
           <Container>
             <Row>
               <Col md="4">
-                <hr className="line-info" />
-                <h1>
+                {/* <hr className="line-info" /> */}
+                <h1 style={{fontSize:"35px"}}>
                   Wanna{" "}
                  <span className="text-info">JOIN US ?</span>
+                 <hr className="line-info" />
                 </h1>
               </Col>
             </Row>

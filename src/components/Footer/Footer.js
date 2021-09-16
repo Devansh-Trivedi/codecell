@@ -36,22 +36,22 @@ export default function Footer() {
           <Col md="2">
             <Nav>
               <NavItem>
-                <NavLink to="/" tag={Link}>
+                <NavLink to="/" tag={Link} style={{fontSize:"16px"}}>
                   Home
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/Events" tag={Link}>
+                <NavLink to="/Events" tag={Link} style={{fontSize:"16px"}}>
                   Events
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/Gallery" tag={Link}>
+                <NavLink to="/Gallery" tag={Link} style={{fontSize:"16px"}}>
                   Gallery
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/Internship" tag={Link}>
+                <NavLink to="/Internship" tag={Link} style={{fontSize:"16px"}}>
                   Internship
                 </NavLink>
               </NavItem>
@@ -60,13 +60,13 @@ export default function Footer() {
           <Col md="3">
             <Nav>
               <NavItem>
-                <NavLink to="/register-page" tag={Link}>
+                <NavLink to="/register-page" tag={Link} style={{fontSize:"16px"}}>
                   Register
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/profile-page" tag={Link}>
-                  Profile
+                <NavLink to="/" tag={Link} style={{fontSize:"16px"}}>
+                  Recursion 3.0
                 </NavLink>
               </NavItem>
               {/* <NavItem>
@@ -87,11 +87,11 @@ export default function Footer() {
               <Button
                 className="btn-icon btn-neutral btn-round btn-simple"
                 color="default"
-                href="https://twitter.com/creativetim"
+                href="https://www.linkedin.com/company/rgit-codecell/"
                 id="tooltip622135962"
                 target="_blank"
               >
-                <i className="fab fa-twitter" />
+                <i className="fab fa-linkedin" />
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip622135962">
                 Follow us
@@ -99,27 +99,13 @@ export default function Footer() {
               <Button
                 className="btn-icon btn-neutral btn-round btn-simple"
                 color="default"
-                href="https://www.facebook.com/creativetim"
+                href="https://www.instagram.com/rgitcodecell"
                 id="tooltip230450801"
                 target="_blank"
               >
-                <i className="fab fa-facebook-square" />
+                <i className="fab fa-instagram" />
               </Button>
-              <UncontrolledTooltip delay={0} target="tooltip230450801">
-                Like us
-              </UncontrolledTooltip>
-              <Button
-                className="btn-icon btn-neutral btn-round btn-simple"
-                color="default"
-                href="https://dribbble.com/creativetim"
-                id="tooltip318450378"
-                target="_blank"
-              >
-                <i className="fab fa-dribbble" />
-              </Button>
-              <UncontrolledTooltip delay={0} target="tooltip318450378">
-                Follow us
-              </UncontrolledTooltip>
+            
             </div>
           </Col>
         </Row>

@@ -3,6 +3,27 @@ import Lottie from "lottie-web";
 import { Line } from "react-chartjs-2";
 import '../../Team.css'
 
+import aditya from '../../assets/img/team22/aditya.jpg'
+import devansh from '../../assets/img/team22/devansh.jpg'
+// import adrain from '../../assets/img/team22/adrain.jpeg'
+import anusha from '../../assets/img/team22/anusha.jpg'
+import asad from '../../assets/img/team22/asad.JPEG'
+import atharva from '../../assets/img/team22/Atharva.jpg'
+import rohit from '../../assets/img/team22/rohit.jpeg'
+import Bhagyasha from '../../assets/img/team22/bhagyasha.jpg'
+import adrain from '../../assets/img/team22/adrain.jpeg'
+import Kshitij from '../../assets/img/team22/kishtij.jpg'
+import aakansha from '../../assets/img/team22/caAkansha.jpg'
+import mamta from '../../assets/img/team22/mamta.jpg'
+import fletcher from '../../assets/img/team22/fletcher.jpeg'
+import rudra from '../../assets/img/team22/rudra.jpg'
+import sakshi from '../../assets/img/team22/sakshi.jpg'
+import Siddhi from '../../assets/img/team22/siddhi.jpg'
+import tasneem from '../../assets/img/team22/tasneem.jpg'
+import Ujjwal from '../../assets/img/team22/ujjwal.png'
+import Vanshita from '../../assets/img/team22/vanshita.jpg'
+import Yogita from '../../assets/img/team22/yogita.jpg'
+
 import {
   Button,
   Card,
@@ -26,49 +47,8 @@ import Footer from "components/Footer/Footer.js";
 import bigChartData from "variables/charts.js";
 
 
-export default function Team21_22() {
+export default function team22_22() {
  
-  const data = [
-    {id:1,title:"Title", paragraph:" Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. ", img:"https://images.unsplash.com/photo-1554244933-d876deb6b2ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"},
-    {id:2,title:"Title", paragraph:" Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. ", img:"https://images.unsplash.com/photo-1554244933-d876deb6b2ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"},
-    {id:3,title:"Title", paragraph:" Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. ", img:"https://images.unsplash.com/photo-1554244933-d876deb6b2ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"},
-    {id:4,title:"Title", paragraph:" Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. ", img:"https://images.unsplash.com/photo-1554244933-d876deb6b2ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"},
-    {id:5,title:"Title", paragraph:" Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. ", img:"https://images.unsplash.com/photo-1554244933-d876deb6b2ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"},
-    {id:6,title:"Title", paragraph:" Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. ", img:"https://images.unsplash.com/photo-1554244933-d876deb6b2ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"},
-  ]
-
-  const renderList = data.map((item)=>{
-    return(
-      <Row className="row-grid justify-content-between" key={item.id}>
-                    <Col md="6">
-                      <div className="pl-md-5">
-                        <h1>
-                          {item.title}
-                        </h1>
-                        <p>
-                          {item.paragraph}
-                        </p>
-                      
-                        <br />
-                        <a
-                          className="font-weight-bold text-info mt-5"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          Show all{" "}
-                          <i className="tim-icons icon-minimal-right text-info" />
-                        </a>
-                      </div>
-                    </Col>
-                    
-                    <Col lg="6" md="6">
-                      <Card>
-                        <CardImg top width="10%" src={item.img}/>
-                      </Card>
-                    </Col>
-      </Row>
-    )
-  })   
 
   return (
     <>
@@ -76,7 +56,7 @@ export default function Team21_22() {
       <Container style={{marginTop:80}}>
          
                     
-        <h1>Team21_22</h1>
+        <h1>Team 21-22</h1>
         <div class="wrapper">
         <div>
         <h1 style={{marginTop: 70,textAlign: "center", color:'#ffffff'}}>• Meet Our Team •</h1>
@@ -90,7 +70,7 @@ export default function Team21_22() {
             <div class="col-sm-6 col-lg-4 col-xl-3">
                 <div class="single-person">
                 <div class="person-image">
-                    <img src="https://images.unsplash.com/photo-1554244933-d876deb6b2ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="" />
+                    <img src={adrain} alt="" />
                 </div>
                 <div class="person-info">
                     <h4 class="full-name">Adrain Dsouza</h4>
@@ -103,7 +83,7 @@ export default function Team21_22() {
             <div class="col-sm-6 col-lg-4 col-xl-3">
                 <div class="single-person">
                 <div class="person-image">
-                    <img src="https://images.unsplash.com/photo-1554244933-d876deb6b2ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80g" alt="" />
+                    <img src={rohit} alt="" />
                 </div>
                 <div class="person-info">
                     <h4 class="full-name">Rohit Singh</h4>
@@ -116,7 +96,7 @@ export default function Team21_22() {
             <div class="col-sm-6 col-lg-4 col-xl-3">
                 <div class="single-person">
                 <div class="person-image">
-                    <img src="https://images.unsplash.com/photo-1554244933-d876deb6b2ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="" />
+                    <img src={aakansha} alt="" />
                 </div>
                 <div class="person-info">
                     <h4 class="full-name">C A Aakansha</h4>
@@ -133,7 +113,7 @@ export default function Team21_22() {
             <div class="col-sm-6 col-lg-4 col-xl-3">
                 <div class="single-person">
                 <div class="person-image">
-                    <img src="https://images.unsplash.com/photo-1554244933-d876deb6b2ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="" />
+                    <img src={Ujjwal} alt="" />
                 </div>
                 <div class="person-info">
                     <h4 class="full-name">Ujjwal Dixit</h4>
@@ -144,7 +124,7 @@ export default function Team21_22() {
             <div class="col-sm-6 col-lg-4 col-xl-3">
                 <div class="single-person">
                 <div class="person-image">
-                    <img src="https://images.unsplash.com/photo-1554244933-d876deb6b2ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="" />
+                    <img src={rudra} alt="" />
                 </div>
                 <div class="person-info">
                     <h4 class="full-name">Rudra Tiwari</h4>
@@ -161,7 +141,7 @@ export default function Team21_22() {
             <div class="col-sm-6 col-lg-4 col-xl-3">
                 <div class="single-person">
                 <div class="person-image">
-                    <img src="https://images.unsplash.com/photo-1554244933-d876deb6b2ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="" />
+                    <img src={Kshitij} alt="" />
                 </div>
                 <div class="person-info">
                     <h4 class="full-name">Kshitij Jatekar</h4>
@@ -174,7 +154,7 @@ export default function Team21_22() {
             <div class="col-sm-6 col-lg-4 col-xl-3">
                 <div class="single-person">
                 <div class="person-image">
-                    <img src="https://images.unsplash.com/photo-1554244933-d876deb6b2ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="" />
+                    <img src={anusha} alt="" />
                 </div>
                 <div class="person-info">
                     <h4 class="full-name">Anusha S.</h4>
@@ -186,7 +166,7 @@ export default function Team21_22() {
             <div class="col-sm-6 col-lg-4 col-xl-3">
                 <div class="single-person">
                 <div class="person-image">
-                    <img src="https://images.unsplash.com/photo-1554244933-d876deb6b2ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="" />
+                    <img src={Yogita} alt="" />
                 </div>
                 <div class="person-info">
                     <h4 class="full-name">Yogita Chaudhari</h4>
@@ -199,7 +179,7 @@ export default function Team21_22() {
             <div class="col-sm-6 col-lg-4 col-xl-3">
                 <div class="single-person">
                 <div class="person-image">
-                    <img src="https://images.unsplash.com/photo-1554244933-d876deb6b2ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="" />
+                    <img src={devansh} alt="" />
                 </div>
                 <div class="person-info">
                     <h4 class="full-name">Devansh Trivedi</h4>
@@ -211,7 +191,7 @@ export default function Team21_22() {
             <div class="col-sm-6 col-lg-4 col-xl-3">
                 <div class="single-person">
                 <div class="person-image">
-                    <img src="https://images.unsplash.com/photo-1554244933-d876deb6b2ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="" />
+                    <img src={atharva} alt="" />
                 </div>
                 <div class="person-info">
                     <h4 class="full-name">Atharva Shinde</h4>
@@ -222,7 +202,7 @@ export default function Team21_22() {
             <div class="col-sm-6 col-lg-4 col-xl-3">
                 <div class="single-person">
                 <div class="person-image">
-                    <img src="https://images.unsplash.com/photo-1554244933-d876deb6b2ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="" />
+                    <img src={asad} alt="" />
                 </div>
                 <div class="person-info">
                     <h4 class="full-name">Asad Memon</h4>
@@ -236,7 +216,7 @@ export default function Team21_22() {
             <div class="col-sm-6 col-lg-4 col-xl-3">
                 <div class="single-person">
                 <div class="person-image">
-                    <img src="https://images.unsplash.com/photo-1554244933-d876deb6b2ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="" />
+                    <img src={tasneem} alt="" />
                 </div>
                 <div class="person-info">
                     <h4 class="full-name">Tasneem S.</h4>
@@ -249,7 +229,7 @@ export default function Team21_22() {
             <div class="col-sm-6 col-lg-4 col-xl-3">
                 <div class="single-person">
                 <div class="person-image">
-                    <img src="https://images.unsplash.com/photo-1554244933-d876deb6b2ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="" />
+                    <img src={Siddhi} alt="" />
                 </div>
                 <div class="person-info">
                     <h4 class="full-name">Siddhi Pevekar</h4>
@@ -263,7 +243,7 @@ export default function Team21_22() {
             <div class="col-sm-6 col-lg-4 col-xl-3">
                 <div class="single-person">
                 <div class="person-image">
-                    <img src="https://images.unsplash.com/photo-1554244933-d876deb6b2ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="" />
+                    <img src={aditya} alt="" />
                 </div>
                 <div class="person-info">
                     <h4 class="full-name">Aditya Dhaware</h4>
@@ -274,7 +254,7 @@ export default function Team21_22() {
             <div class="col-sm-6 col-lg-4 col-xl-3">
                 <div class="single-person">
                 <div class="person-image">
-                    <img src="https://images.unsplash.com/photo-1554244933-d876deb6b2ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="" />
+                    <img src={Vanshita} alt="" />
                 </div>
                 <div class="person-info">
                     <h4 class="full-name">Vanshita Lavange</h4>
@@ -288,7 +268,7 @@ export default function Team21_22() {
             <div class="col-sm-6 col-lg-4 col-xl-3">
                 <div class="single-person">
                 <div class="person-image">
-                    <img src="https://images.unsplash.com/photo-1554244933-d876deb6b2ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="" />
+                    <img src={fletcher} alt="" />
                 </div>
                 <div class="person-info">
                     <h4 class="full-name">Fletcher Fernandes </h4>
@@ -299,7 +279,7 @@ export default function Team21_22() {
             <div class="col-sm-6 col-lg-4 col-xl-3">
                 <div class="single-person">
                 <div class="person-image">
-                    <img src="https://images.unsplash.com/photo-1554244933-d876deb6b2ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="" />
+                    <img src={mamta} alt="" />
                 </div>
                 <div class="person-info">
                     <h4 class="full-name">Bandgar Mamta</h4>
@@ -313,7 +293,7 @@ export default function Team21_22() {
             <div class="col-sm-6 col-lg-4 col-xl-3">
                 <div class="single-person">
                 <div class="person-image">
-                    <img src="https://images.unsplash.com/photo-1554244933-d876deb6b2ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="" />
+                    <img src={sakshi} alt="" />
                 </div>
                 <div class="person-info">
                     <h4 class="full-name">Sakshi Pandey</h4>
@@ -324,7 +304,7 @@ export default function Team21_22() {
             <div class="col-sm-6 col-lg-4 col-xl-3">
                 <div class="single-person">
                 <div class="person-image">
-                    <img src="https://images.unsplash.com/photo-1554244933-d876deb6b2ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="" />
+                    <img src={Bhagyasha} alt="" />
                 </div>
                 <div class="person-info">
                     <h4 class="full-name">Bhagyasha Patil</h4>
@@ -340,6 +320,7 @@ export default function Team21_22() {
 
         
       </Container>
+      <Footer/>
     </>
   );
 }
